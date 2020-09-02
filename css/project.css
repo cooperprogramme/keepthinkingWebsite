@@ -1,0 +1,241 @@
+/*============================== ACTIVE NAVIGATION ==============================*/
+
+.menu-link { 
+    opacity:0.5; 
+  }
+
+.menu-link:nth-child(1) {
+    opacity:1;
+}
+
+/*============================== PROJECT NAVIGATION ==============================*/
+
+.project-navigation {
+  display: block;
+  position: fixed;
+  top: 4px;
+  height: 76px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+}
+
+.project-name {
+  margin: 22px 40px 30px 40px;
+}
+
+.project-previous {
+  position: absolute;
+  right: 80px;
+  top: 0;
+  padding: 30px 30px 32px 20px;
+}
+
+.left-top {
+  width: 15px;
+  height: 3px;
+  background-color: #E0001B;
+  transform: rotate(-45deg); 
+}
+
+.left-bottom {
+  margin-top: 6px;
+  width: 15px;
+  height: 3px;
+  background-color: #E0001B;
+  transform: rotate(45deg); 
+}
+
+.project-previous-title {
+  display: none;
+}
+
+.project-previous-title {
+  width: 50%;
+  position: absolute;
+  top: 22px;
+  left: 40px;
+  color: #222222;
+  font-weight: 700;
+  font-size: 22px;
+  background-color: #fff;
+  z-index: 0;
+}
+
+.project-next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 30px 40px 32px 25px;
+}
+
+.right-top {
+  width: 15px;
+  height: 3px;
+  background-color: #E0001B;
+  transform: rotate(45deg); 
+}
+
+.right-bottom {
+  margin-top: 6px;
+  width: 15px;
+  height: 3px;
+  background-color: #E0001B;
+  transform: rotate(-45deg); 
+}
+
+.project-next-title {
+  display: none;
+}
+
+.project-next-title {
+  width: 50%;
+  position: absolute;
+  top: 22px;
+  left: 40px;
+  color: #222222;
+  font-weight: 700;
+  font-size: 22px;
+  background-color: #fff;
+  z-index: 0;
+}
+
+.project-previous:hover + .project-previous-title {
+  display: block;
+}
+
+.project-next:hover + .project-next-title {
+  display: block;
+}
+
+/*================== PROJECT NAVIGATION RESPONSIVE ==================*/
+
+@media screen and (max-width: 660px) {
+  .project-name {
+    margin: 22px 30px 30px 30px;
+  }
+  .project-next {
+    padding: 30px 30px 32px 20px;
+  }
+  .project-previous {
+    padding: 30px 20px 32px 20px;
+  }
+  .project-previous-title {
+    left: 30px;
+  }
+  .project-next-title {
+    left: 30px;
+  }
+}
+
+/*============================== PROJECT CONTENT ==============================*/
+
+.project-module-rule {
+  margin: 30px 0 15px 0;
+  display: block;
+  background-color: #E0001B;
+  width: 20px;
+  height: 3px;
+}
+
+.project-content {
+  margin: 40px 40px 0 40px;
+}
+
+.module-image img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.module-content {
+  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.module-details {
+  flex: 1;
+  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;         /* OLD - Firefox 19- */
+  width: 20%;               /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;          /* Chrome */
+  -ms-flex: 1;              /* IE 10 */
+  max-width: 400px;
+}
+
+.module-details a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #E0001B;
+}
+
+.module-details a:hover {
+  color: #9B9B9B;
+}
+
+.module-details a:active {
+  color: #222222;
+}
+
+.module-description {
+  margin-left: 40px;
+  max-width: 70%;
+  flex: 1;
+  -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;         /* OLD - Firefox 19- */
+  width: 20%;               /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;          /* Chrome */
+  -ms-flex: 1;              /* IE 10 */
+}
+
+.module-description p {
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #222222;
+}
+
+/*================== PROJECT CONTENT RESPONSIVE ==================*/
+
+@media screen and (min-width: 1800px) {
+  .module-description p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .module-description {
+    margin-left: 40px;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .module-content {
+    display: block;
+  }
+  .module-description {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .project-content {
+    margin: 0 30px 0 30px;
+  }
+  .module-description p {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+  .module-image img {
+    margin-top: 0;
+  }
+  h5 {
+    font-size: 22px;
+  }
+}

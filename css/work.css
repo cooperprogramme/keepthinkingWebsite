@@ -1,0 +1,180 @@
+/*============================== ACTIVE NAVIGATION ==============================*/
+
+.menu-link { 
+    opacity:0.5; 
+  }
+
+.menu-link:nth-child(1) {
+    opacity:1;
+}
+
+/*============================== LIST OF PROJECTS ==============================*/
+
+.project-row {
+    padding: 0 20px 40px 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-row > .project-item {
+    flex: 1 0 200px;
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    width: 20%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    min-width: 300px;
+}
+
+.project-item {
+    margin: 0 20px 20px 20px;
+}
+
+.project-item div {
+    overflow: hidden;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease;
+    vertical-align: middle;
+}
+
+.project-item:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+/*================== PROJECTS RESPONSIVE ==================*/
+
+/* @media only screen and (min-width: 1500px) {
+    .project-item div {
+        max-height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .project-item div {
+        max-height: 900px;
+    }
+    .project-row {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .project-item div {
+        max-height: 300px;
+    }
+    .tablet-title {
+        margin-bottom: 100px;
+      }
+}
+
+@media screen and (max-width: 720px) {
+    .project-row {
+        display: block;
+        padding: 0 20px 0 20px;
+    }
+    .project-row a {
+        padding: 0;
+        margin: 0;
+    }
+    .project-row h3 {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .project-row {
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .project-row .project-item {
+        min-width: 100px;
+    }
+} */
+
+/*================== PROJECT ITEMS RESPONSIVE ==================*/
+
+@media (min-width: 310px) {
+    .project-row .project-item {
+      max-width: calc(100% - 40px);
+    }
+}
+@media (min-width: 410px) {
+    .project-row .project-item {
+      max-width: calc(100% - 40px);
+    }
+}
+@media (min-width: 620px) {
+    .project-row .project-item {
+      max-width: calc(100% - 40px);
+    }
+}
+@media (max-width: 620px) {
+    .project-item img {
+      height: 350px; 
+    }
+}
+@media (max-width: 660px) {
+    .project-row {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 10px 0 10px;
+    }
+    .project-item {
+        margin: 20px 20px 20px 20px;
+    }
+}
+@media (min-width: 720px) {
+    .project-row .project-item {
+      max-width: calc(50% - 40px);
+    }
+}
+@media screen and (max-width: 960px) {
+    .project-item div {
+        max-height: 300px;
+    }
+    .tablet-title {
+        margin-bottom: 100px;
+      }
+}
+@media (min-width: 1460px) {
+    .project-item img {
+      height: 400px; 
+    }
+}
+@media (min-width: 1670px) {
+    .project-item img {
+      height: 500px; 
+    }
+    .project-item div {
+      max-height: 350px;
+    }
+}
+@media (min-width: 1800px) {
+    .project-row .project-item {
+      margin-bottom: 80px;
+    }
+    .project-item img {
+      height: 600px; 
+    }
+    .project-item div {
+      max-height: 600px;
+    }
+}

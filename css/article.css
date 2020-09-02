@@ -1,0 +1,248 @@
+/*============================== ACTIVE NAVIGATION ==============================*/
+
+.menu-link { 
+    opacity:0.5; 
+  }
+
+.menu-link:nth-child(2) {
+    opacity:1;
+}
+
+/*============================== PROJECT NAVIGATION ==============================*/
+
+.news-navigation {
+    display: block;
+    position: fixed;
+    top: 4px;
+    height: 76px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+
+.news-name h3 {
+    width: 40%;
+    margin: 22px 40px 25px 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-previous {
+    position: absolute;
+    right: 80px;
+    top: 0;
+    padding: 30px 30px 32px 20px;
+}
+
+.left-top {
+    width: 15px;
+    height: 3px;
+    background-color: #E0001B;
+    transform: rotate(-45deg); 
+}
+
+.left-bottom {
+    margin-top: 6px;
+    width: 15px;
+    height: 3px;
+    background-color: #E0001B;
+    transform: rotate(45deg); 
+}
+
+.news-previous-title {
+    display: none;
+}
+
+.news-previous-title {
+    width: 40%;
+    position: absolute;
+    top: 22px;
+    left: 40px;
+    color: #222222;
+    font-weight: 700;
+    font-size: 22px;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 0;
+}
+
+.news-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 30px 40px 32px 25px;
+}
+
+.right-top {
+    width: 15px;
+    height: 3px;
+    background-color: #E0001B;
+    transform: rotate(45deg); 
+}
+
+.right-bottom {
+    margin-top: 6px;
+    width: 15px;
+    height: 3px;
+    background-color: #E0001B;
+    transform: rotate(-45deg); 
+}
+
+.news-next-title {
+    display: none;
+}
+
+.news-next-title {
+    width: 40%;
+    position: absolute;
+    top: 22px;
+    left: 40px;
+    color: #222222;
+    font-weight: 700;
+    font-size: 22px;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 0;
+}
+
+.news-previous:hover + .news-previous-title {
+    display: block;
+}
+
+.news-next:hover + .news-next-title {
+    display: block;
+}
+
+/*================== PROJECT NAVIGATION RESPONSIVE ==================*/
+
+@media screen and (max-width: 660px) {
+    .news-name h3 {
+        margin: 22px 30px 25px 30px;
+        width: 40%;
+    }
+    .news-next {
+        padding: 30px 30px 32px 20px;
+    }
+    .news-previous {
+        padding: 30px 20px 32px 20px;
+    }
+    .news-previous-title {
+        left: 30px;
+        width: 60%;
+    }
+    .news-next-title {
+        left: 30px;
+        width: 60%;
+    }
+}
+
+/*============================== ARTICLE CONTENT ==============================*/
+
+.article-module-rule {
+    margin: 30px 0 15px 0;
+    display: block;
+    background-color: #E0001B;
+    width: 20px;
+    height: 3px;
+}
+  
+.article-content {
+    margin: 40px 40px 0 40px;
+}
+
+.module-image img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.module-content {
+    margin-bottom: 60px;
+}
+
+.module-details {
+    max-width: 400px;
+}
+
+.module-details a {
+    font-weight: 700;
+    font-size: 18px;
+    color: #E0001B;
+}
+
+.module-details a:hover {
+    color: #9B9B9B;
+}
+
+.module-details a:active {
+    color: #222222;
+}
+
+.module-description {
+    max-width: 60%;
+}
+
+.module-description p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+}
+
+.module-description a {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #E0001B;
+}
+
+.module-description a:hover {
+    color: #9B9B9B;
+}
+
+.module-description a:active {
+    color: #222222;
+}
+  
+/*================== ARTICLE CONTENT RESPONSIVE ==================*/
+
+@media screen and (min-width: 1800px) {
+    .module-description p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .module-description {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .module-content {
+        display: block;
+    }
+    .module-description {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .article-content {
+        margin: 0 30px 0 30px;
+    }
+    .module-description p {
+        font-size: 22px;
+    }
+    .module-image img {
+        margin-top: 0;
+    }
+    h5 {
+        font-size: 22px;
+    }
+}

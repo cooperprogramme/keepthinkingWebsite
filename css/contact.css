@@ -1,0 +1,301 @@
+/*============================== ACTIVE NAVIGATION ==============================*/
+
+.menu-link { 
+    opacity:0.5; 
+}
+
+.menu-link:nth-child(4) {
+    opacity:1;
+}
+
+/*============================== CONTACT FORM ==============================*/
+
+.section-rule {
+    margin-bottom: 15px;
+    display: block;
+    background-color: #E0001B;
+    width: 20px;
+    height: 3px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #9B9B9B;
+}
+
+.contact-container {
+    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    padding-top: 10px;
+}
+
+.forms {
+    flex: 2;
+    -webkit-box-flex: 2;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 2;         /* OLD - Firefox 19- */
+    width: 40%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 2;          /* Chrome */
+    -ms-flex: 2;              /* IE 10 */
+    margin-left: 40px;
+}
+
+.forms form {
+    padding-top: 20px;
+}
+
+.forms input {
+    margin-bottom: 30px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E0001B;
+    display: block;
+    padding-bottom: 15px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #222222;
+}
+
+.forms input:focus{
+    border-bottom: 2px solid #E0001B;
+}
+
+.forms input::placeholder {
+    color: #222222;
+}
+
+.forms textarea {
+    height: 40px;
+    min-height: 0;
+	max-height: 100vh;
+    margin-bottom: 15px;
+    text-decoration: none;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E0001B;
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #222222;
+}
+
+.forms textarea:focus{
+    border-bottom: 2px solid #E0001B;
+}
+
+.forms textarea::placeholder {
+    color: #222222;
+}
+
+.forms input[type=checkbox] {
+    display: inline-block;
+    cursor: pointer;
+    width: 15px;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+
+.forms label {
+    font-weight: 700;
+    font-size: 16px;
+    color: #9B9B9B;
+    display: inline;
+    cursor: pointer;
+}
+
+.forms input[type=submit] {
+    outline: none;
+    border: none;
+    border-bottom: none;
+    background-color: #fff;
+    color: #E0001B;
+    float: right;
+    cursor: pointer;
+    width: 75px;
+    font-size: 22px;
+}
+
+.forms input[type=submit]:hover {
+    color:#9B9B9B;
+}
+
+.forms input[type=submit]:active {
+    color:#222222;
+}
+
+/*============================== LOCATION DETAILS ==============================*/
+
+.contact-location {
+    flex: 1;
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    width: 20%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    margin-left: 80px;
+    margin-right: 40px;
+}
+
+.contact-location img {
+    width: 300px;
+}
+
+.contact-location a p {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #222222;
+}
+
+.contact-location a p:hover {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E0001B;
+}
+
+/*============================== SUBSCRIBE FORM ==============================*/
+
+.newsletter-form {
+    padding-top: 100px;
+}
+
+.newsletter-form form {
+    padding-top: 20px;
+}
+
+.newsletter-form input {
+    margin-bottom: 15px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E0001B;
+    display: block;
+    padding-bottom: 15px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #222222;
+}
+
+.newsletter-form input:focus{
+    border-bottom: 2px solid #E0001B;
+}
+
+.newsletter-form input::placeholder {
+    color: #222222;
+}
+
+.newsletter-form input[type=submit] {
+    outline: none;
+    border: none;
+    border-bottom: none;
+    background-color: #fff;
+    color: #E0001B;
+    float: right;
+    cursor: pointer;
+    width: 105px;
+    font-size: 22px;
+}
+
+.newsletter-form input[type=submit]:hover {
+    color:#9B9B9B;
+}
+
+.newsletter-form input[type=submit]:active {
+    color:#222222;
+}
+
+/*============================== SOCIAL MEDIA LINKS ==============================*/
+
+.social-media {
+    margin: 0 0 100px 40px;
+}
+
+.social-media  .section-rule {
+    margin-top: 100px;
+}
+
+.social-media a {
+    color:#E0001B;
+}
+.social-media a:link {
+    color: #E0001B;
+}
+.social-media a:visited {
+    color: #E0001B;
+}
+.social-media a:hover {
+    color:#9B9B9B;
+}
+.social-media a:active {
+    color:#222222;
+}
+
+/*============================== RESPONSIVE ==============================*/
+
+@media only screen and (min-width: 1800px) {
+    .contact-location {
+        margin-left: 150px;
+    }
+    .contact-location img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-location {
+        margin-left: 40px;
+    }
+    .contact-location img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contact-container {
+        display: block;
+        margin-right: 40px;
+    }
+    .contact-location {
+        margin-top: 100px;
+        margin-right: 0;
+    }
+    .contact-location img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .forms {
+        margin-left: 30px;
+    }
+    .contact-container {
+        margin-right: 30px;
+    }
+    .contact-location {
+        margin-left: 30px;
+    }
+    .social-media {
+        margin: 0 0 0 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-form span {
+        display: none;
+    }
+    .social-media {
+        display: none;
+    }
+}

@@ -1,0 +1,157 @@
+/*============================== FEATURED PROJECTS ==============================*/
+
+.work-row {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    flex-wrap: wrap;
+}
+
+.work-row > .item-big {
+    flex: 2;
+    -webkit-box-flex: 2;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 2;         /* OLD - Firefox 19- */
+    width: 40%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 2;          /* Chrome */
+    -ms-flex: 2;              /* IE 10 */
+    min-width: 300px;
+    margin: 20px;
+}
+
+.work-row > .item-small {
+    flex: 1;
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    width: 20%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    min-width: 200px;
+    margin: 20px;
+}
+
+.item-big div {
+    overflow: hidden;
+    max-height: 500px;
+}
+
+.item-big img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease;
+    vertical-align: middle;
+}
+
+.item-big:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.item-small div {
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.item-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease;
+    vertical-align: middle;
+}
+
+.item-small:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+/*================== WORK RESPONSIVE ==================*/
+
+@media only screen and (min-width: 1500px) {
+    .item-big div {
+        width: 100%;
+        height: 100%;
+        max-height: 600px;
+        object-fit: cover;
+    }
+    .item-small div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        max-height: 500px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .item-big div {
+        width: 100%;
+        height: 100%;
+        max-height: 900px;
+        object-fit: cover;
+    }
+    .item-small div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        max-height: 700px;
+        object-fit: cover;
+    }
+    .work-row {
+        margin-bottom: 80px;
+        }
+    }
+
+@media screen and (max-width: 660px) {
+    .work-row {
+        padding: 10px;
+    }
+}
+
+/*=================================== ABOUT FEATURE ===================================*/
+
+.about-feature {
+    margin-bottom: 80px;
+}
+
+.about-feature-rule {
+    margin: 140px 0 15px 40px;
+    display: block;
+    background-color: #E0001B;
+    width: 20px;
+    height: 3px;
+}
+
+.about-feature p {
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #E0001B;
+}
+
+.about-feature-text {
+    margin: 15px 40px 20px 40px;
+    max-width: 800px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: -0.5px;
+    color: #222222;
+}
+
+.about-feature-text span {
+    color: #E0001B;
+}
+
+/*================== ABOUT RESPONSIVE ==================*/
+
+@media screen and (max-width: 710px) {
+    .about-feature {
+        display: none;
+    }
+}

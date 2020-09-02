@@ -1,0 +1,396 @@
+/*============================== ACTIVE NAVIGATION ==============================*/
+
+.menu-link { 
+    opacity:0.5; 
+  }
+
+.menu-link:nth-child(3) {
+    opacity:1;
+}
+
+/*========================= PROCESS MODULE ===================================*/
+
+.about-cover-mobile {
+    display: none;
+}
+
+.process-features {
+    margin: 150px 0 40px 40px;
+    display: flex;
+    display: -moz-box;
+    display:-moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+}
+
+.process-features-description {
+    margin-top: 0;
+    max-width: 360px;
+    flex: 1;
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    width: 20%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1; 
+}
+
+.process-features-content {
+    margin-bottom: 140%;
+}
+
+.process-features-content:nth-last-child(1) {
+    margin-bottom: 60%;
+}
+
+.process-features-content img {
+    margin-bottom: 30px;
+}
+
+.process-feature-rule {
+    margin: 0 0 20px 0;
+    display: block;
+    background-color: #E0001B;
+    width: 20px;
+    height: 3px;
+}
+
+.process-features-description p {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+    max-width: 400px;
+}
+
+.process-features-content p a {
+    color: #E0001B;
+}
+
+.process-features-content p a:hover {
+    color: #9B9B9B;
+}
+
+.process-interface-container {
+    background-color: #F2F2F2;
+    margin-left: 100px;
+    flex: 1;
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    width: 20%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1; 
+}
+
+.process-interface-container img {
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 70%;
+    margin-left: 15%;
+    top: 24%;
+    margin-bottom: 100px;
+    z-index: 1;
+    object-fit: scale-down;
+    margin-top: -19%;
+}
+
+.process-contact-button {
+    background-color: #E0001B;
+    color: #fff;
+    padding: 15px 25px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+.process-contact-button:hover {
+    background-color: #ff001e;
+}
+
+#discover1, #discover2, #discover3, 
+#userExperience1, #userExperience2, #userExperience3, #userExperience4,
+#userInterface1, #userInterface2, #userInterface3, #userInterface4,
+#Development1, #Development2, #Development3, #Development4, 
+#launch1, #launch2, #launch3 
+{
+    display: none;
+}
+
+
+/*================== PROCESS MODULE RESPONSIVE ==================*/
+
+@media only screen and (min-width: 1800px) {
+    .process-interface-container img {
+        top: 10%;
+        margin-top: -20%;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .process-interface-container {
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .process-interface-container {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .process-features {
+        margin: 20px 0 0 40px;
+    }
+    .process-interface-container {
+        margin: 0;
+    }
+    .process-interface-container img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        top: 33%
+        }
+    .process-features-description {
+        max-width: 300px;
+    }
+    .process-features-content {
+        margin: 0 40px 140% 0;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .about-cover-mobile {
+        display: block;
+        width: 100%;
+        background-color: #F2F2F2;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    .about-cover-mobile img {
+        max-width: 86%;
+        margin: -140px 25px 40px 25px;
+    }
+    .process-features {
+        margin: 20px 0 0 30px;
+    }
+    .process-features-description {
+        display: block;
+        max-width: 480px;
+    }
+    .process-features-content {
+        margin-bottom: 180px;
+    }
+    .process-interface-container {
+        display: none;
+    }
+    .process-features-content:nth-last-child(1) {
+        margin-bottom: 40px;
+    }
+}
+
+
+/*========================= USERS MODULE ===================================*/
+
+.profile-module {
+    margin-bottom: 80px;
+}
+
+.profile-feature-rule {
+    margin: 80px 0 15px 0;
+    display: block;
+    background-color: #E0001B;
+    width: 20px;
+    height: 3px;
+}
+
+/*================== CLIENTS ACCORDION ==================*/
+
+.clients-row {
+    display: flex;
+    display: -moz-box;
+    display:-moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.client-logo {
+    display: flex;
+    display: -moz-box;
+    display:-moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-logo img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/*================== PROFILE (3 ACCORDIONS) ==================*/
+
+.users-panel-block {
+    width: 100%;
+}
+
+.users-accordion-container h4 {
+    margin-bottom: 20px;
+}
+
+.users-description h4 {
+    margin-bottom: 5px;
+}
+
+.users-accordion-container {
+    margin: 0 40px;
+}
+
+.users-accordion {
+    background-color: #fff;
+    color: #222222;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 20px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-top: 1px solid #aaaaaa;
+}
+
+.users-active, .users-accordion:hover {
+    color: #ff001e;
+}
+
+.users-accordion:after {
+    content: '\002B';
+    color: #ff001e;
+    font-weight: 300;
+    font-size: 60px;
+    float: right;
+    margin-right: 5px;
+    line-height: 25px;
+}
+
+.users-active:after {
+    content: "\2212";
+}
+
+.users-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.users-panel-block {
+    margin: 40px 0 40px 0;
+    padding-bottom: 0;
+    display: flex;
+    display: -moz-box;
+    display:-moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+}
+
+.users-description {
+    margin-right: 40px;
+}
+
+.users-panel p {
+    padding-bottom: 30px;
+    margin-left: auto;
+    max-width: 60%;
+    color: #222222;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    display: inline;
+}
+
+.users-panel a:hover {
+    color: #ff001e;
+}
+
+/*================== USERS MODULE RESPONSIVE ==================*/
+
+@media only screen and (min-width: 1800px) {
+    .qi-users {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .qi-users-container img {
+        padding: 40px 0;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .qi-users-container img {
+        padding: 40px 0;
+        width: 100%;
+    }
+    .qi-users-container {
+        margin-left: 40px;
+    }
+    .qi-users-description {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .qi-users-container {
+        margin-left: 0;
+        margin: auto;
+    }
+    .qi-users {
+        margin-right: 40px;
+    }
+    .users-accordion {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .qi-users {
+        display: block;
+    }
+    .qi-users-description {
+        margin: auto;
+        max-width: 360px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .qi-users {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .users-accordion-container {
+        margin: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .qi-users {
+        margin-top: 60px;
+    }
+    .users-panel-block {
+        display: block;
+    }
+    .users-description {
+        margin-bottom: 30px;
+    }
+}

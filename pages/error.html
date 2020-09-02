@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Keepthinking - Digital Studio - London</title>
+        <meta name="Keepthinking cultural software development digital design collection management systems" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+        <link rel="stylesheet" type="text/css" href="../css/error.css">
+        <link rel="shortcut icon" type="image/png" href="../Icons/kt-favicon.png">
+    </head>
+
+    <body>
+
+        <!-------------------- NAVIGATION (includes logo, languages and links) -------------------------------------------------------------------------------->
+
+        <header>
+            <nav class="navigation">
+                <div class="nav-line"></div>
+                <div class=“logo”>
+                        <a href="index.html"><img id="logo" src="../Icons/keepthinking-logo.svg" alt="Keepthinking's Logo"></a>
+                        <!-- Language options are contained within the 'logo' div for layout purposes -->
+                        <div class="lang"><a href="#">العربية</a></div>
+                        <div class="lang"><a href="#">中文 (简体)</a></div>
+                        <div class="lang"><a href="#">中文 (繁體)</a></div>
+                        <div class="lang"><a href="#">日本語</a></div>
+                        <div class="lang"><a href="#">DE</a></div>
+                        <div class="lang"><a href="#">IT</a></div>
+                </div>
+                <nav class=“nav-options”>
+                    <ul class=“menu”>
+                        <li class="menu-link" id="work"><a href="work.html">Work</a></li>
+                        <li class="menu-link" id="news"><a href="news.html">News</a></li>
+                        <li class="menu-link" id="about"><a href="about.html">About</a></li>
+                        <li class="menu-link" id="contact"><a href="contact.html">Contact</a></li>
+                        <!-- Hamburger icon for small screen sizes -->
+                        <a class="burger" id="displayMenu" onclick="openMenu()">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </a>
+                        <!-- Qi link with text displaying on hover -->
+                        <div class=qi-link>
+                            <a href="qi.html"><img id="qi-logo" src="../Icons/qi-logo.svg"></a>
+                            <div class="qi-text">Universal Collection Management Solution</div>
+                        </div>
+                    </ul>
+                </nav>
+                <!-- Close menu icon for small screen sizes -->
+                <a id="closeBurger" onclick="closeMenu()">
+                    <div class="lineLeft"></div>
+                    <div class="lineRight"></div>
+                </a>
+                <div id="backgroundMobile" onclick="closeMenu()"></div>
+            </nav>
+        </header>
+
+    <main class=“content”>
+
+        <!-------------------- ERROR TITLE --------------------------------------------------------------------------------->
+
+        <section class=“title-section”>
+
+            <div class="title-rule"></div>
+            
+            <h1 class="title">
+                We <span>can't</span> seem to <span>find</span> the page you're <span>looking</span> for. 
+                Why not <span>navigate</span> to our <span>projects</span>, learn <span>about</span> us 
+                or get in <span>touch?</span>
+            </h1>
+            
+            <!-- Message changes for smaller screen sizes -->
+             <h1 class="tablet-title">
+                We <span>can't</span> seem to <span>find</span> the page you're <span>looking</span> for. 
+                Why not <span>navigate</span> to our <span>projects</span>, learn <span>about</span> us 
+                or get in <span>touch?</span>
+            </h1>
+
+            <div class="button-container">
+                <a class="process-contact-button" href="work.html">Projects</a>
+                <a class="process-contact-button" href="about.html">About us</a>
+                <a class="process-contact-button" href="contact.html">Get in touch</a>
+            </div>
+
+        </section>
+
+        <img src="../Illustrations/2.2-Icon.png" alt="Project plan icon" class="error-icon">
+
+    </main>
+
+    <!-------------------- FOOTER SECTION -------------------------------------------------------------------------------------------------------------------->
+
+    <section class="footer">
+        <!-- Column 1 includes a link to Google Maps and social media links-->
+        <div class="footer-column-1">
+            <div class="footer-rule"></div>
+            <p>
+                <a href="https://www.google.com/maps/place/Keepthinking/@51.5048839,-0.0955258,17z/data=!4m12!1m6!3m5!1s0x48761b51b187d071:0x9272349df40f8fd3!2sKeepthinking!8m2!3d51.5048806!4d-0.0933318!3m4!1s0x48761b51b187d071:0x9272349df40f8fd3!8m2!3d51.5048806!4d-0.0933318" target="_blank"> 
+                <span>38-40 Southwark Street<br></span>
+                London <span>SE1 1UN<br>
+                +44 20 7490 5337</span></a>
+            </p>
+            <p>
+                <a href="https://www.facebook.com/keepthinking.uk/" class="footer-social" target="_blank">Facebook,</a>
+                <a href="https://twitter.com/keepthinking_uk" class="footer-social" target="_blank"> Twitter,</a>
+                <a href="https://www.linkedin.com/organization-guest/company/keepthinking?trk=tyah&challengeId=AQFCIOkSi9SG9gAAAXJ_GXi2LWc0Rm_vW0vttsBmkKOXQFo9qoJ9HEGzWA67QoSHb2BZF-B3_Plaj0_awW8BGt1ENtwYKg8Pqw&submissionId=fdf84060-e253-1516-d70e-44fa7cae4f4a" class="footer-social" target="_blank"> LinkedIn</a>
+            </p>
+        </div>
+        <!-- Column 2 includes links to About, Contact and Newsletter Subscription form-->
+        <div class="footer-column-2">
+            <div class="footer-rule"></div>
+            <p>
+                <a href="about.html" >About us</a><br>
+                <a href="contact.html" >Get in touch</a><br>
+                <br>
+            </p>
+            <!-- 'Subscribe to newsletter' button opens the subscription form. Includes message, email input and submit button -->
+            <p>
+                <!-- Subscribe button has same class as social button for styling purposes -->
+                <a class="footer-social" id="openSubscribe" onclick="openForm()">Subscribe <span>to newsletter</span></a>
+            </p>
+            <div class="subscribe-form" id="subscribeForm">
+                <form action="/action_page.php" method="post">
+                    <p>Stay up to date</p>
+                    <input type="email" id="subscribe-email-popup" placeholder="Enter your email address…" name="email" required>
+                    <input type="submit" value="Subscribe" onclick="closeForm()">
+                </form>
+            </div>
+            <a id="backgroundOverlay" onclick="closeForm()"></a>
+        </div>
+        <!-- Column 3 includes qi link -->
+        <div class="footer-column-3">
+            <div class=footer-qi-link>
+                <a href="qi.html"><img id="qi-logo" src="../Icons/qi-logo.svg"></a>
+                <div class="qi-text">Universal Collection Management Solution</div>
+            </div>
+        </div>
+        <!-- Copyright message includes span tag to hide on small screen sizes -->
+        <div class="copyright">
+            <p>© 2002 – 2020 <span>Keepthinking</span></p>
+        </div>
+    </section>
+    
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
